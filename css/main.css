@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+}
+
+.container {
+    background: silver;
+}
+.header {
+    background: yellow;
+    height: 10vh;
+}
+.visual {
+    background: lime;
+    height: 10vh;
+}
+
+main {
+    background: blue;
+    height: 60vh;
+}
+.group1 {
+    background: pink;
+}
+.group2 {
+    background: orange;
+}
+.group3 {
+    background: skyblue;
+}
+
+.slogan {
+    background: blueviolet;
+    height: 10vh;
+}
+
+.footer-bg {
+    background: teal;
+}
+.footer {
+    background: tomato;
+    height: 10vh;
+}
+/* 기본 Box Sizing */
+body *,
+body *::before,
+body *::after {
+    box-sizing: border-box;
+}
+/* 레이아웃 */
+.header,
+.visual,
+.main,
+.slogan,
+.footer {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* 헤더 */
+.header {
+    
+}
+
+.header > .member {
+    list-style: none;   
+}
+
+
+/* 메인 콘텐츠 */
+.main {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    padding: 30px;
+    justify-content: space-evenly;
+}
+.group1 {
+    width: 250px;
+}
+.group2 {
+    width: 380px;
+}
+.group3 {
+    width: 190px;
+}
