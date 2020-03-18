@@ -277,7 +277,7 @@
 >    1. reflow, repaint 검색해보기
 > 6. 
 
-## float로 바꾸어보기
+## float로 main 바꾸어보기
 
 1. 전에는 flex로 만들어 보았지만 flex를 지원하지 않는 크로스 브라우저를 지원 할 수도 있기 때문에 float로도 만들어본다.
 
@@ -334,4 +334,25 @@
 
    7. 하지만 clear를 사용하면  float의 높이만큼 강제로 margin을 추가시켜서 적용된것이므로 주의해야한다.
 
-      
+<hr/>
+
+## header 레이아웃 설계
+
+1. logo 배치
+
+   1. logo는 nav위에 있다.
+      1. position으로 위치를 옮긴다.
+         * absolute : 화면에 떠있는 배치가 된다.(float와 비슷)
+           * absolute는 좌표를 지정할 때 상위에 다른 position(static X)이 필요하다, 없으면 body를 기준으로 한다.
+         * relative : 현재 자리를 고정으로 생각한다.
+      2. .header에 pos:pelative를 주고 logo에 pos:absolute를 줘서 좌표를 조정하여 위치를 맞춘다.
+
+2. member 배치
+
+   1. li는 margin, padding, list-style이 있으므로 초기화 한다.
+
+      1. member에 float:left를 주고
+      2. header에 float:right를 준다.
+
+      * nav에 문제가 생기는데 clear:both로 해결이 가능하다.	
+
