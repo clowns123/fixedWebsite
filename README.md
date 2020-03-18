@@ -275,7 +275,16 @@
 >          2. 가벼운 pacel도 사용해보자
 > 5. 그래픽스
 >    1. reflow, repaint 검색해보기
-> 6. 
+> 6. css의 3대 요소
+>    1. 상속
+>    2. 겹침
+>    3. 우선순위
+> 7. em, rem
+>    1. em은 상속받으면서 하기 때문에 잘못 설정하면 비하급수적으로 크기가 커진다.
+>    2. rem은 최상단 요소로 기준으로 바꾼다.
+> 8. 하이퍼링크 스타일을 지정할때
+>    1. link, visited가 먼저 올라오고 hover과 focus를 쓴다
+> 9. 링크는 44px~22px사이로 만든다. 그래야 사용성으로 편하다.
 
 ## float로 main 바꾸어보기
 
@@ -351,8 +360,36 @@
 
    1. li는 margin, padding, list-style이 있으므로 초기화 한다.
 
+   2. 레이아웃 구성
+
       1. member에 float:left를 주고
       2. header에 float:right를 준다.
 
       * nav에 문제가 생기는데 clear:both로 해결이 가능하다.	
+
+   3. 하지만 2번의 방법은 비합리적이다, li만 옮길 수 있지 않을까??
+
+      1. li를 display:inline로 바꾸고
+      2. block안에 있는 inline속성을 정렬하는 text-align: right로 바꾼다.
+      3. inline로 바꾸니 띄어쓰기 때문에 공백이 생긴다. 공백을 제거하면 되지만 다른 방법을 사용한다.
+      4. 상속을 사용하여 해결한다.
+         * 부모요소에 font-size:0 하고 li요소에 font-size:16px 으로 하면 공백이 사라진다.
+         * 부모가 font-size를 0으로 하니 공백요소가 0으로 되고 li요소는 다시 16으로 하니 li만 나타난다.
+
+   4. li에 있는 글자의 밑줄을 제거한다.
+
+      1. member에  text-decoration: none;로 제거했지만 a태그에 있기때문에 적용되지 않는다.
+      2. 일일이 사라지게 하기 귀찮으므로 모든 a태그의 밑줄을 제거한다.
+
+      * inherit : 상속받는 값을 사용한다는 값
+
+   5. englsh단어를 .member에서  text-transform: uppercase으로 상속받아 사용
+
+   6. 단어를 a태그를 기준으로 padding을 줘서 공백을 나타낸다.
+
+      1. :을 기준으로 해도 되지만 a를 기준으로 해야 터치하기가 편하다.
+
+   7. padding를 해도 요소의 크기는 커지지 않는다. 크기를 키울려면 inline-block로 바꾼다.
+
+      1. 요소에 포커스가 갈 때 border가 생기기 때문에 너무 딱 붙지 않게 하자
 
