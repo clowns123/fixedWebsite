@@ -393,3 +393,11 @@
 
       1. 요소에 포커스가 갈 때 border가 생기기 때문에 너무 딱 붙지 않게 하자
 
+3. nav 배치하기
+
+   1. nav에 있는 서브메뉴를 사라지게 한다.
+      1. display:none를 사용하면 안된다.
+         1. 예전에는 p:a, top: -9999px를 사용했다.
+      2.  position: absolute; width: 1px; height: 1px; overflow: hidden;을 사용한다.
+         1. 이 경우는 1px의 점이 보인다.
+
