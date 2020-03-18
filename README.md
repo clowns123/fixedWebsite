@@ -252,4 +252,86 @@
        * 상황에 따라 고정되지 않다.
        * 단 이미지 사용 횟수를 줄이자(수정에 불편)
      * [네이밍 방법론](https://wit.nts-corp.com/2015/04/16/3538)
-	3. 
+ 	3. css를 적용하기 전 reset.css나 normalize.css을 적용한다.
+      	1. reset.css는 모든 브라우저에 기본적으로 적용되는 css를 초기화 시킨다.
+      	2. normalize.css은 기본 스타일을 다른 브라우저와 일관성을 가지게 유지
+
+<hr/>
+
+# 3일차 
+
+> 1. attribute와 property의 차이점
+>    1. attr은 추가정보로 선택이 가능하다 하지만 property는 만들어질때 부터 만들어진다.
+>
+> 2. 각각의 박스모델에 따라 css의 prop가 무시되므로 잘 확인해보자
+> 3. [웹에 대한 발표](https://www.slideshare.net/search/slideshow?searchfrom=header&q=wsconf)
+> 4. 프론트엔드 페러다임
+>    1. 개발버전과 배포버전을 다르게한다.
+>       1. 개발 
+>          1. pug, sass typescript를 사용하여 개발한다
+>          2. 하지만 브라우저는 이해하지 못하기 때문에 배포할때 바꾼다.
+>       2. 배포
+>          1. babel, webpack처럼 html, css javascrip로 바꿔주는 툴을 사용한다.
+>          2. 가벼운 pacel도 사용해보자
+> 5. 그래픽스
+>    1. reflow, repaint 검색해보기
+> 6. 
+
+## float로 바꾸어보기
+
+1. 전에는 flex로 만들어 보았지만 flex를 지원하지 않는 크로스 브라우저를 지원 할 수도 있기 때문에 float로도 만들어본다.
+
+   1. float는 사진을 한글의 배치에서 설정하는 것과 비슷하다.
+
+   2. 부모요소의 넓이만큼 linebox가 있지만 float가 적용되면 적용된 요소의 크기의 linebox로 줄어들고 남는 부모요소 넓이만큼의 새로운 linebox가 옆에 생성된다. 
+
+   3. float이 적용되면 해당 요소는 높이가 사라지고 모든요소가 float를 사용하면 부모요소의 높이가 사라진다.
+
+   4. 그렇기 때문에 부모요소에 강제로 높이를 주던가 margin을 주지만 좋은 방법은 아니다.
+
+   5. clearfix ,overflow, float로 해결할 수 있고 clearfix가 좋다.
+
+      1. 다음 요소에 빈 div.clearfix요소를 추가하고 clear : both를 적용한다(초창기 방법)
+
+         * 하지만 빈 div는 html의 구조를 망친다.
+
+      2. 그렇기 때문에 부모요소에 가상요소를 추가해서 만든다. 
+
+         1. ```html
+                    <main class="main clearfix">
+                        <div class="group group1">Group1</div>
+                        <div class="group group2">Group2</div>
+                        <div class="group group3">Group3</div>
+                    </main>
+            ```
+
+         2. ```css
+            .main > .group{
+                float: left
+            }
+            .clearfix::after{
+                clear: both;
+                content: "";
+                display: block;
+            }
+            ```
+
+         3. 부모요소에 clearfix를 적용시킨다.
+
+         4. 가상요소를 사용하기 위해 content를 사용한다.
+
+         5. clear은 block일 때만 동작한다.
+
+      3. 간단하게 부모요소에 overflow를 사용해서 해결이 가능하다.
+
+         * 하지만 부모요소 밖으로 요소를 보여주고 싶을 때 overflow에 막혀서 디자인에 제약이 생긴다.
+
+      4. 부모요소에 float를 사용하여 해결이 가능하다
+
+         * 하지만 이중 float(요소를 그룹하여 사용)를 사용할 때만 사용이 가능하다.
+
+   6. clear로 흐름을 조절할 수 있지만 clear는 block를 만들어야 사용이 가능하다.
+
+   7. 하지만 clear를 사용하면  float의 높이만큼 강제로 margin을 추가시켜서 적용된것이므로 주의해야한다.
+
+      
