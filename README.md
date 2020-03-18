@@ -285,6 +285,7 @@
 > 8. 하이퍼링크 스타일을 지정할때
 >    1. link, visited가 먼저 올라오고 hover과 focus를 쓴다
 > 9. 링크는 44px~22px사이로 만든다. 그래야 사용성으로 편하다.
+> 10. [그라디언트 예제](https://leaverou.github.io/css3patterns/)
 
 ## float로 main 바꾸어보기
 
@@ -395,9 +396,28 @@
 
 3. nav 배치하기
 
-   1. nav에 있는 서브메뉴를 사라지게 한다.
+   1. nav에 있는 제목를 사라지게 한다.
       1. display:none를 사용하면 안된다.
          1. 예전에는 p:a, top: -9999px를 사용했다.
       2.  position: absolute; width: 1px; height: 1px; overflow: hidden;을 사용한다.
          1. 이 경우는 1px의 점이 보인다.
+         2.  clip: rect(0, 0, 0, 0); 추가하여 사용한다.
+            1. p:a일때만 사용가능
+            2. 구형 브라우저에서만 사용
+         3. clip-path: polygon(0 0, 0 0, 0 0);
+            1. 모던 브라우져에서 사용
+
+<hr/>
+
+4. 메인메뉴
+   1. margin과 padding-left의 속성을 다시 정하고 list-style: none;을 제거한다
+   2.  선을 그어준다.
+      1. border나 box-shadow을 사용한다.
+   3. 색을 넣어준다.
+      1. background-image: linear-gradient()로 그라디언트를 넣는다.
+      2. [그라이언트 예제](https://leaverou.github.io/css3patterns/), [그라디언트 조합예제](https://www.colorzilla.com/gradient-editor/)
+   4. 모서리를 둥글게 만든다.
+   5. sub 제목을 글자 데코레이션을한다.
+   6. sub 아이템을 초기화한다.
+   7. 
 

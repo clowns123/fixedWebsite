@@ -7,12 +7,12 @@
     display: block;
 }
 
-.a11y-hidden{
+.a11y-hidden {
     background-color: yellow;
     position: absolute;
     width: 1px;
     height: 1px;
-    overflow: hidden;  
+    overflow: hidden;
     clip-path: polygon(0 0, 0 0, 0 0);
 }
 .container {
@@ -87,7 +87,7 @@ html {
 /* 헤더 */
 .header {
     background-color: #fff;
-    padding: 0 30px 0 30px;
+    padding: 0 30px;
     border-radius: 0 0 15px 15px;
     position: relative;
 }
@@ -95,8 +95,8 @@ html {
 .logo {
     margin: 0;
     position: absolute;
-    top: 45px;
-    left: 65px;
+    top: 65px;
+    left: 45px;
 }
 
 .member {
@@ -112,7 +112,8 @@ html {
     right: -10px; */
 }
 
-.member li, .member a{
+.member li,
+.member a {
     display: inline-block;
 }
 .member li {
@@ -122,9 +123,36 @@ html {
     padding: 8px 10px;
 }
 
-/* 메인메뉴 */
-.navigation {
+/* 메인 메뉴 */
+.navigation{
+    padding-bottom: 50px;
+}
+.menu {
     background-color: orange;
+    border-top: 2px solid #000;
+    /* box-shadow: 0 -2px 5px 0 #000; */
+    background: #f27900 linear-gradient(
+        to bottom,
+        rgba(242, 121, 0, 1) 0%,
+        rgba(247, 90, 0, 1) 35%,
+        rgba(247, 90, 0, 1) 65%,
+        rgba(242, 121, 0, 1) 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    margin: 5px 0 0;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.menu-link{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.submenu{
+    padding-left:0;
+    list-style-type: none;
+    background-color: pink;
 }
 
 /* 메인 콘텐츠 */
