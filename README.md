@@ -211,6 +211,8 @@
 >    1. html은 페이지의 구조를 의미.
 >    2. css는 스타일로 웹 페이지를 꾸며줄 때 사용한다.
 >
+> 웹 접근성은 [ARIA](https://developer.mozilla.org/ko/docs/Web/Accessibility/ARIA)를 이용한다.
+>
 > <hr/>
 
 1. css3은 다양한 모듈들로 이루어져 있다.
@@ -285,7 +287,7 @@
 > 8. 하이퍼링크 스타일을 지정할때
 >    1. link, visited가 먼저 올라오고 hover과 focus를 쓴다
 > 9. 링크는 44px~22px사이로 만든다. 그래야 사용성으로 편하다.
-> 10. [그라디언트 예제](https://leaverou.github.io/css3patterns/)
+> 10. [그라디언트 예제](https://leaverou.github.io/css3patterns/) [그라디언트 조합예제](https://www.colorzilla.com/gradient-editor/)
 
 ## float로 main 바꾸어보기
 
@@ -397,15 +399,35 @@
 3. nav 배치하기
 
    1. nav에 있는 제목를 사라지게 한다.
+
       1. display:none를 사용하면 안된다.
+
          1. 예전에는 p:a, top: -9999px를 사용했다.
+
       2.  position: absolute; width: 1px; height: 1px; overflow: hidden;을 사용한다.
+
          1. 이 경우는 1px의 점이 보인다.
+
          2.  clip: rect(0, 0, 0, 0); 추가하여 사용한다.
+
             1. p:a일때만 사용가능
             2. 구형 브라우저에서만 사용
+
          3. clip-path: polygon(0 0, 0 0, 0 0);
+
             1. 모던 브라우져에서 사용
+
+         4. ```css
+            .a11y-hidden {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+                clip-path: polygon(0 0, 0 0, 0 0);
+            }
+            ```
+
+         5. 
 
 <hr/>
 
@@ -419,5 +441,18 @@
    4. 모서리를 둥글게 만든다.
    5. sub 제목을 글자 데코레이션을한다.
    6. sub 아이템을 초기화한다.
-   7. 
 
+<hr/>
+
+# 4일차 - 메인 메뉴 작성
+
+> 1. 콘텐츠 모델
+>    1. 모델에 따라 들어가는 자식이 다르다
+>       * ul은 li만 들어가고 dl는 dt나 dd만 허용한다..
+> 2. white-space
+>    1. block에만 적용할 수 있는 속성으로 띄어쓰기를 방지한다.
+> 3. 이모티콘
+>    1. [폰트어썸](https://fontawesome.com/), [폰텔로](http://fontello.com/)
+>    2. 각각 사이트에서 다운받아서 사용이 가능하다.
+>    3. 이모티콘을 쓸때 \을 넣으면 스크린 리더가 읽지 못한다.
+> 4. 박스아래 글자 크기만큼 밑줄을 원할때 ::after을 사용하여 border을 그려준다.

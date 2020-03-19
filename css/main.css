@@ -1,5 +1,6 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 @import url(./normalize.css);
+@import url(./fontello.css);
 /* CSS class module */
 .clearfix::after {
     content: "";
@@ -8,7 +9,6 @@
 }
 
 .a11y-hidden {
-    background-color: yellow;
     position: absolute;
     width: 1px;
     height: 1px;
@@ -95,8 +95,8 @@ html {
 .logo {
     margin: 0;
     position: absolute;
-    top: 65px;
-    left: 45px;
+    top: 50px;
+    left: 65px;
 }
 
 .member {
@@ -124,36 +124,94 @@ html {
 }
 
 /* 메인 메뉴 */
-.navigation{
-    padding-bottom: 50px;
+.navigation {
+    padding-bottom: 40px;
 }
 .menu {
-    background-color: orange;
     border-top: 2px solid #000;
     /* box-shadow: 0 -2px 5px 0 #000; */
-    background: #f27900 linear-gradient(
-        to bottom,
-        rgba(242, 121, 0, 1) 0%,
-        rgba(247, 90, 0, 1) 35%,
-        rgba(247, 90, 0, 1) 65%,
-        rgba(242, 121, 0, 1) 100%
-    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: #f27900
+        linear-gradient(
+            to bottom,
+            rgba(247, 121, 0, 1) 0%,
+            rgba(242, 90, 0, 1) 35%,
+            rgba(242, 90, 0, 1) 65%,
+            rgba(247, 121, 0, 1) 100%
+        ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     margin: 5px 0 0;
-    padding-left: 0;
+    padding-left: 229px;
     list-style: none;
     border-radius: 0 0 5px 5px;
+    /* position: relative; */
+    /* overflow: hidden; */
+    height: 47px;
 }
 
-.menu-link{
+.menu-link {
+    display: block;
     color: #fff;
     font-weight: 700;
     font-size: 1.6rem;
+    line-height: 45px;
+    padding: 0 20px;
+    text-shadow: -1px 0 2px #000, 0 1px 2px #000, 1px 0 2px #000,
+        0 -1px 2px #000;
 }
-.submenu{
-    padding-left:0;
+
+.menu-item-act .menu-link{
+    color: yellow;
+}
+.menu-item-act .menu-link::after{
+    content: "";
+    display: block;
+    border-bottom: 2px solid #000000;
+}
+
+
+
+.menu-item {
+    border-left: 1.5px solid #fff;
+    float: left;
+    position: relative;
+}
+
+
+.submenu {
+    top: 47px;
+    padding-left: 0;
     list-style-type: none;
-    background-color: pink;
+    position: absolute;
+    white-space: nowrap;
+    /* 임시 */
+    display: none;
 }
+
+.menu > li:nth-child(1) .submenu, 
+.menu > li:nth-child(2) .submenu,
+.menu > li:nth-child(3) .submenu{
+    left: 0;
+}
+
+.menu > li:nth-child(4) .submenu, 
+.menu > li:nth-child(5) .submenu,
+.menu > li:nth-child(6) .submenu{
+    right: 0;
+}
+
+.submenu li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.submenu a{
+    padding: 10px 0;
+    display: block;
+}
+
+.menu-item-act .submenu{
+    display: block;
+}
+
 
 /* 메인 콘텐츠 */
 .main {
