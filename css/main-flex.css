@@ -1,7 +1,7 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 @import url(./normalize.css);
 @import url(./fontello.css);
-/* @import url(./main-flex.css); */
+@import url(./main-flex.css);
 /* CSS class module */
 .clearfix::after {
     content: "";
@@ -143,81 +143,67 @@ html {
     padding-left: 229px;
     list-style: none;
     border-radius: 0 0 5px 5px;
-    /* position: relative; */
-    /* overflow: hidden; */
-    height: 47px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
 }
 
 .menu-link {
-    outline: 0;
-    display: block;
     color: #fff;
     font-weight: 700;
     font-size: 1.6rem;
-    line-height: 45px;
-    padding: 0 20px;
     text-shadow: -1px 0 2px #000, 0 1px 2px #000, 1px 0 2px #000,
         0 -1px 2px #000;
-}
 
-.menu-item-act .menu-link{
+    display: block;
+    padding: 15px 20px;
+}
+.menu-item-act .menu-link {
     color: yellow;
 }
- .menu-link:hover{
-     color: hsla(110, 50%, 50%, 1)
- }
 
-/*padding로 만들어서 여백을 침범하지 못하고 글자크기만큼만 구현*/
-.menu-item-act .menu-link::after{
+.menu-item-act .menu-link::after {
     content: "";
     display: block;
-    background-color: #000;
-    height: 2px;
+    border-top: 2px solid black;
+    position: absolute;
 }
-
-
 
 .menu-item {
-    border-left: 1.5px solid #fff;
-    float: left;
+    border-left: 1px solid #fff;
     position: relative;
+    white-space: nowrap;
 }
 
+
+.menu-item-act .submenu {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.menu-item:nth-child(1) .submenu,
+.menu-item:nth-child(2) .submenu,
+.menu-item:nth-child(3) .submenu {
+  left: 0;
+}   
+.menu-item:nth-child(4) .submenu,
+.menu-item:nth-child(5) .submenu,
+.menu-item:nth-child(6) .submenu {
+  right: 0;
+}
 
 .submenu {
-    top: 47px;
-    padding-left: 0;
-    list-style-type: none;
-    position: absolute;
-    white-space: nowrap;
-    /* 임시 */
     display: none;
+    position: absolute;
 }
 
-.menu > li:nth-child(1) .submenu, 
-.menu > li:nth-child(2) .submenu,
-.menu > li:nth-child(3) .submenu{
-    left: 0;
-}
 
-.menu > li:nth-child(4) .submenu, 
-.menu > li:nth-child(5) .submenu,
-.menu > li:nth-child(6) .submenu{
-    right: 0;
-}
 
-.submenu li{
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.submenu a{
-    padding: 10px 0;
+.submenu a {
     display: block;
-}
-
-.menu-item-act .submenu{
-    display: block;
+    padding: 10px;
 }
 
 
