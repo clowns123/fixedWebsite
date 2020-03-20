@@ -459,4 +459,7 @@
 > 5. At-Rules
 >    1. **`@keyframes`** [@규칙](https://developer.mozilla.org/ko/docs/Web/CSS/At-rule)은 개발자가 애니메이션 중간중간의 특정 지점들을 거칠 수 있는 키프레임들을 설정함으로써 CSS 애니메이션 과정의 중간 절차를 제어할 수 있게 합니다. 이 룰은 브라우저가 자동으로 애니메이션을 처리하는 것 보다 더 세밀하게 중간 동작들을 제어할 수 있습니다.
 > 6. 애니메이션은 자바스크립트 라이브러리도 많다.
+> 7. [자바스크립트 랜더링 방법](https://blog.asamaru.net/2017/05/04/script-async-defer/)
+> 8. [Reflow와 Repaint](https://github.com/wonism/TIL/blob/master/front-end/browser/reflow-repaint.md)
+> 9. 
 
