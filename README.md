@@ -461,5 +461,31 @@
 > 6. 애니메이션은 자바스크립트 라이브러리도 많다.
 > 7. [자바스크립트 랜더링 방법](https://blog.asamaru.net/2017/05/04/script-async-defer/)
 > 8. [Reflow와 Repaint](https://github.com/wonism/TIL/blob/master/front-end/browser/reflow-repaint.md)
-> 9. 
+>    1. [교수님 추천 링크]([https://falsy.me/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%98-%EC%9D%B4%ED%95%B4-1-reflow-repaint%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC-%EC%95%8C%EC%95%84%EB%B4%85%EB%8B%88%EB%8B%A4/](https://falsy.me/브라우저의-이해-1-reflow-repaint에-대하여-알아봅니다/))
+>    2. reflow와 repaint가 많이 발생하면 성능이 떨어진다.
 
+
+
+
+
+<hr/>
+
+# 5일차 
+
+> 1. 개발 순서
+>    1. 논리적 순서
+>    2. 시맨틱 마크업
+>    3. 네이밍
+>    4. 레이아웃/디자인
+> 2. [엔티티 기호](https://www.w3schools.com/charsets/ref_html_entities_4.asp)
+>    1. &lt; 태그 기호를 키보드에 있는것을 치면 태그로 인식하지만 엔티티 기호는 모양을 알아차린다.&gt;
+>    2. &yen; &euro; 등 특수기호도 있다.
+> 3. 피그마
+>    1. ui작업
+> 4. 
+
+
+
+1. visual 영역
+   1. 장식 그림은 background로 배경을 넣는다.
+   2. html에는 text만 넣는다.

@@ -19,10 +19,6 @@
 .container {
     background: silver;
 }
-.visual {
-    background: lime;
-    height: 10vh;
-}
 
 main {
     background: blue;
@@ -160,30 +156,26 @@ html {
         0 -1px 2px #000;
 }
 
-.menu-item-act .menu-link{
+.menu-item-act .menu-link {
     color: yellow;
 }
- .menu-link:hover{
-     color: hsla(110, 50%, 50%, 1)
- }
+.menu-link:hover {
+    color: hsla(110, 50%, 50%, 1);
+}
 
 /*padding로 만들어서 여백을 침범하지 못하고 글자크기만큼만 구현*/
-.menu-item-act .menu-link::after{
+.menu-item-act .menu-link::after {
     content: "";
     display: block;
     background-color: #000;
     height: 2px;
-    
 }
-
-
 
 .menu-item {
     border-left: 1.5px solid #fff;
     float: left;
     position: relative;
 }
-
 
 .submenu {
     top: 47px;
@@ -195,32 +187,55 @@ html {
     display: none;
 }
 
-.menu > li:nth-child(1) .submenu, 
+.menu > li:nth-child(1) .submenu,
 .menu > li:nth-child(2) .submenu,
-.menu > li:nth-child(3) .submenu{
+.menu > li:nth-child(3) .submenu {
     left: 0;
 }
 
-.menu > li:nth-child(4) .submenu, 
+.menu > li:nth-child(4) .submenu,
 .menu > li:nth-child(5) .submenu,
-.menu > li:nth-child(6) .submenu{
+.menu > li:nth-child(6) .submenu {
     right: 0;
 }
 
-.submenu li{
+.submenu li {
     display: inline-block;
     margin-right: 10px;
 }
 
-.submenu a{
+.submenu a {
     padding: 10px 0;
     display: block;
 }
 
-.menu-item-act .submenu{
+.menu-item-act .submenu {
     display: block;
 }
 
+/* 비주얼영역 */
+
+.visual {
+    height: 120px;
+}
+
+.visual .visual-text {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    animation-name: textAni;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    display: inline-block;
+}
+
+@keyframes textAni {
+    0% {
+    }
+    100% {
+        opacity: 100%;
+        transform: translate(500px, 70px) scale(1.7) ;
+    }
+}
 
 /* 메인 콘텐츠 */
 .main {
