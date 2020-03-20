@@ -16,9 +16,6 @@
     overflow: hidden;
     clip-path: polygon(0 0, 0 0, 0 0);
 }
-.container {
-    background: silver;
-}
 
 main {
     background: blue;
@@ -66,6 +63,12 @@ body {
     font-weight: 400;
     font-size: 1.4rem;
     color: #181818;
+    /* background-color: #ccc;
+    background-image: url(./images/bg_flower.png), linear-gradient(to bottom, #ccc, #eee, #fff);
+    background-repeat: no-repeat, repeat;
+    background-position: 50% 10px, 0 0; */
+
+    background: url(./images/bg_flower.png) no-repeat 50% 0,#ccc linear-gradient(to bottom, #ccc, #eee, #fff);
 }
 
 html {
@@ -218,6 +221,9 @@ html {
 .visual {
     height: 120px;
     position: relative;
+    
+    
+    /* background: url(./images/bg_flower.png) no-repeat center; */
     /* background: 0px -10px no-repeat,url(./images/ani_flower_01.png)
     url(./images/ani_flower_02.png) no-repeat 600px 20px,
     url(./images/ani_flower_03.png) no-repeat 300px 0px,
