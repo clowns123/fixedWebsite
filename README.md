@@ -477,12 +477,37 @@
 >    2. 시맨틱 마크업
 >    3. 네이밍
 >    4. 레이아웃/디자인
+>
 > 2. [엔티티 기호](https://www.w3schools.com/charsets/ref_html_entities_4.asp)
+>
 >    1. &lt; 태그 기호를 키보드에 있는것을 치면 태그로 인식하지만 엔티티 기호는 모양을 알아차린다.&gt;
 >    2. &yen; &euro; 등 특수기호도 있다.
+>
 > 3. 피그마
+>
 >    1. ui작업
+>
 > 4. 배경은 z-index가 적용되지 않는다.
+>
+> 5. 하든 콘텐츠 선택
+>
+>    1. display: none, visibility: hidden, hidden은 잘못된다.
+>
+>    2. .a11y-hidden을 사용한다.
+>
+>       1. ```css
+>          .a11y-hidden{ 
+>          position: absolute !important;
+>              height: 1px; 
+>              width: 1px;
+>              overflow: hidden;
+>              clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+>              clip: rect(1px, 1px, 1px, 1px);
+>              white-space: nowrap; /* added line */
+>          }
+>          ```
+>
+> 6. 
 
 
 
