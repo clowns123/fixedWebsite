@@ -535,4 +535,41 @@
          1. 폼에서 연관성 있는 필드를 묶는다.
          2. legend는 제목에 대해 연관을 한다.
       4. 아래 링크 태그는 ul태그를 사용하여 만든다, div태그로 만들어도 상관없다.
-      5. 
+
+> ### git에 대해 간단한 설명
+>
+> 1. git은 많이 쓰이는 버전 관리 시스템중 하나이다.
+>    1. git은 로컬로 저장을 하게 되고 온라인으로 저장이 가능한 사이트들이 있는데 가장 유명한 것은 github
+> 2. 간단한 git 명령어
+>    1. git init : 로컬에서 git 저장소를 만든다.
+>    2. git status : 파일의 상태를 확인한다.
+>    3. git add ('파일이름' or  '.') : git 저장소에 특정 파일 또는 모든 파일을 추적한다.
+>    4. git commit -m "변경된 메시지 내용을 입력" : 변경사항을 저장한다.
+>    5. git remote add origin "원격 서버 주소" : 원격 저장소를 지정한다. 
+>    6. git push -u origin master : github등 원격 저장소에 저장을 한다.
+>    7. git clone "원격 서버 주소" : 다른 사람의 원격 저장소를 로컬 저장소로 가져온다.
+>    8. git pull : clone or remote한 git 원격 저장소에 업데이트 된 내용을 가져온다.
+
+
+
+
+
+<hr/>
+
+# 2주 1일차
+
+> css 프레임워크
+>
+> 	1. bootstrp은 별로 추천안한다.
+>  	2. sematic ui을 추천
+>
+> input
+>
+> 1. type의 종류
+> 2. input는 label(for)과 같이 써야하고 주민등록번호와 같은 2개는 title로 지정하거나 aria-label을 사용한다.
+>
+> [html6](https://morioh.com/p/6d422fc49bd2?fbclid=IwAR2qeXSXaE4u2L5D1S-1thCUX_-nJ17ojwtcdNxdUZnUNbhKQIdxtRUYCV8) : 여러가지 태그가 추가된다.
+>
+> from
+>
+> ​	1. fildset, legend을 사용하여 묶어줘서 사용하면 좋다.

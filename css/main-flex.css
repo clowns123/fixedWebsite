@@ -135,7 +135,6 @@ body {
     border-top: 2px solid #000;
     border-radius: 0 0 5px 5px;
     display: flex;
-    justify-content: space-evenly;
 }
 .menu-item {
     border-left: 2px solid #fff;
