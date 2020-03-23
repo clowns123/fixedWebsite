@@ -420,22 +420,27 @@ html {
 .term{
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin: 0;
-  padding: 15px;
   background: #ddd linear-gradient(#ddd, #eee);
-
+  padding: 10px 15px;
 }
-.term h2{
-  padding: 0;
+.term .term-heading{
   margin: 0;
+  font-weight: 700;
 }
-
-.term dt{
+.term .term-list{
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.term .term-list-subject{
+  display: inline-block;
   color: blue;
+  padding-bottom: 10px;
 }
-.term dd{
+.term .term-list-thumbnail{
+  margin-left: 0;
+  float: left;
+  padding-right: 15px;
 }
-
 
 
 .group2 {
