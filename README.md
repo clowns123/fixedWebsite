@@ -570,6 +570,15 @@
 >
 > [html6](https://morioh.com/p/6d422fc49bd2?fbclid=IwAR2qeXSXaE4u2L5D1S-1thCUX_-nJ17ojwtcdNxdUZnUNbhKQIdxtRUYCV8) : 여러가지 태그가 추가된다.
 >
-> from
+> form
 >
-> ​	1. fildset, legend을 사용하여 묶어줘서 사용하면 좋다.
+> 	1. fildset, legend을 사용하여 묶어줘서 사용하면 좋다.
+>
+> 유요성검사
+>
+>  	1. title을 이용하여 스크린 리더가 읽을 때를 도와준다.
+>      * title : 마크업 유효성 검사 페이지로 이동(새창)
+>
+> 박스모델
+>
+> ​	1. 예를들어서 li태그에 적용시킨 속성들을 a태그로 바꾸면 적용되지 않는 속성이 있는데 inline과 block의 차이로 인해 발생한다.

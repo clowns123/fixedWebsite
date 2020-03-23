@@ -309,17 +309,17 @@ html {
   margin: 0 0 10px 20px;
   font-size: 1.5rem;
   font-weight: 700;
-  color:yellow;
+  color: yellow;
 }
 
-
-.login-form, .sign{
+.login-form,
+.sign {
   background-color: #fff;
   padding-right: 10px;
   padding-left: 10px;
 }
 
-.login-form{
+.login-form {
   border-radius: 5px 5px 0 0;
   padding-top: 10px;
 }
@@ -332,11 +332,7 @@ html {
   padding-bottom: 5px;
 }
 
-.user-email {
-  padding-bottom: 5px;
-}
-
-.login-form label{
+.login-form label {
   display: inline-block;
   width: 4em;
 }
@@ -347,13 +343,14 @@ html {
   border: 1px solid #ccc;
 } */
 
-[name^="user"]{
+[name^="user"] {
   width: 95px;
   height: 24px;
   padding: 1px 1px 1px 5px;
   border: 1px solid #ccc;
 }
 
+.user-email,
 .user-pw {
   padding-bottom: 5px;
 }
@@ -382,8 +379,42 @@ html {
   display: flex;
   justify-content: space-between;
   letter-spacing: -1px;
-
 }
+
+/* 유효성 검사 배너 링크 */
+.validation-list {
+  list-style-type: none;
+  margin-top: 25px;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.validation-list ul {
+  margin: 0;
+  padding: 0;
+}
+.validation-list a {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  background: url(./images/validation_icon.png) no-repeat 25px 50%, #ddd linear-gradient(#ddd, #eee);
+  margin: 10px 0;
+  line-height: 30px;
+  text-indent: 50px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.validation-list a:hover{
+  color: red;
+}
+/* .validation-list li::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url(./images/validation_icon.png);
+  background-position: center;
+  background-size: initial;
+} */
 
 .group2 {
   width: 380px;
