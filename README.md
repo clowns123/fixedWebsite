@@ -588,3 +588,12 @@
 > 	1. alt태그는 추가 정보를 줘야 하면 무조건 주지만 아닐경우는 공란으로 놔둬도 된다.
 >
 > git commit --amend : 코맨드를 잘못 적은 commit을 수정이 가능하다.
+
+<hr/>
+
+# 2일차
+
+> ㅁㄴㅇ
+
+1. text-align(black요소), vertical-align(inline)를 정렬한다.
+2. line-hight: inline box모델을 바꾸는걸로 위치 조정이 가능하다.

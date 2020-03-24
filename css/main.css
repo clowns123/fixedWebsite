@@ -214,8 +214,7 @@ html {
     url(images/ani_flower_04.png) no-repeat 800px 0px; */
 }
 
-.visual::before
-.visual::after {
+.visual::before .visual::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -474,6 +473,7 @@ html {
 } 
 */
 
+/* display:flex로 완성
 .term {
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -506,6 +506,47 @@ html {
 .term .term-list-text {
   margin-left: 0;
   width: 150px;
+} 
+*/
+
+.term {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-image: linear-gradient(#ccc, #eee);
+  padding: 15px;
+}
+.term .term-heading {
+  margin: 0;
+  font-size: 1.6rem;
+}
+.term .term-list {
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.term .term-list dd{
+  margin-left: 0;
+}
+.term-list-subject, .term-list-text{
+  float: right;
+  width: 145px;
+}
+.term .term-list-subject {
+  background-color: yellow;
+  color: #296897;
+  font-weight: 700;
+}
+.term .term-list-thumb {
+  background-color: pink;
+}
+.term .term-list-thumb img {
+  vertical-align: top;
+  float: left;
+}
+.term .term-list-text {
+  background-color: lime;
+  margin-top: 5px;
 }
 
 .group2 {
