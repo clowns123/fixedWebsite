@@ -597,3 +597,4 @@
 
 1. text-align(black요소), vertical-align(inline)를 정렬한다.
 2. line-hight: inline box모델을 바꾸는걸로 위치 조정이 가능하다.
+3. [정리 공부](https://mulder21c.github.io/)

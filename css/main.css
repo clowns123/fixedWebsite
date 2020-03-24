@@ -521,32 +521,41 @@ html {
   font-size: 1.6rem;
 }
 .term .term-list {
-  overflow: hidden;
+  /* overflow: hidden; */
   margin-top: 15px;
   margin-bottom: 0;
 }
-.term .term-list dd{
+.term .term-list dd {
   margin-left: 0;
 }
-.term-list-subject, .term-list-text{
+.term-list-subject,
+.term-list-text {
   float: right;
   width: 145px;
 }
 .term .term-list-subject {
-  background-color: yellow;
   color: #296897;
   font-weight: 700;
 }
 .term .term-list-thumb {
-  background-color: pink;
 }
 .term .term-list-thumb img {
   vertical-align: top;
   float: left;
 }
 .term .term-list-text {
-  background-color: lime;
   margin-top: 5px;
+}
+.even {
+  
+  margin-top: 10px;
+}
+.term .even .term-list-subject,
+.term .even .term-list-text {
+  float: left;
+}
+.term .even .term-list-thumb {
+  float: right;
 }
 
 .group2 {
