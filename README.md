@@ -627,11 +627,20 @@
 > 	1. 예전에는 자바스크립트로 가져온 시간들을 time태그를 사용하여 쉽게 사용한다.
 >  	2. time은 dateitme속성이 필수 속성이다.
 >  	3. 2020-03-24T14:51:17의 형태로 속성을 넣는다.
+>
+> 글자 자르기
+>
+> 	1. overflow와 text-overflow를 사용
+>
+> flex
+>
+> ​	1. flex-grow등을 ul에 사용하자
 
 
 
 1. text-align(black요소), vertical-align(inline)를 정렬한다.
 2. line-hight: inline box모델을 바꾸는걸로 위치 조정이 가능하다.
 3. [정리 공부](https://mulder21c.github.io/)
-4. e
+4. 오늘 숙제
+   1. ul부분을 노멀플로우로 유지하면서 바꾸기
 

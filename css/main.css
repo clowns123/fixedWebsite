@@ -597,7 +597,84 @@ html {
 }
 
 /* 공지사항 및 자료실 */
+.board {
+  background-color: yellow;
+  margin-top: 20px;
+  position: relative;
+  height: 200px;
+}
 
+.notice {
+  background-color: pink;
+}
+.pds {
+  background-color: skyblue;
+}
+.notice-heading,
+.pds-heading {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.4rem;
+  float: left;
+}
+.tab {
+  display: block;
+  border: 1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  background: #ccc linear-gradient(#ccc, #eee);
+  padding: 5px 10px;
+  color: #999;
+}
+.board-act .tab {
+  color: #ed552f;
+  border-color: #ed55ef #ed552f #fff #ed552f;
+  background: #fff;
+}
+.notice-list,
+.pds-list {
+  width: 100%;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  background-color: lime;
+}
+.board li {
+  background-color: skyblue;
+  margin: 8px 0;
+  display: flex;
+}
+.board ul a {
+  background-color: teal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+}
+.board time {
+  background-color: brown;
+}
+
+.more {
+  background-color: tomato;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+}
+.more .icon-plus {
+  color: hsla(110, 50%, 30%, 1);
+}
+.board-act [class$="-list"],
+.board-act .more {
+  display: block !important;
+}
+.board [class$="-list"],
+.more {
+  display: none;
+}
 .group3 {
   width: 190px;
 }
