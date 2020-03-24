@@ -593,8 +593,21 @@
 
 # 2일차
 
-> ㅁㄴㅇ
+> 다시한번 강조
+>
+> 	 1. aria을 사용하여 접근성을 중요시하자
+>
+> required
+>
+> 	1. 폼의 유요성을 체크한다.
+>
+> 웹 표준
+>
+> 	1. 예전엔 ie가 웹 표준에 대해 문제가 많이 있었다.
+>  	2. 요즘은 chrome에 문제가 많이 생긴다.
 
 1. text-align(black요소), vertical-align(inline)를 정렬한다.
 2. line-hight: inline box모델을 바꾸는걸로 위치 조정이 가능하다.
 3. [정리 공부](https://mulder21c.github.io/)
+4. e
+

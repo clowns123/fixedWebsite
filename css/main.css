@@ -557,10 +557,46 @@ html {
 .term .even .term-list-thumb {
   float: right;
 }
-
+/* 검색하기 */
 .group2 {
   width: 380px;
 }
+.group2 .search{
+}
+.group2 .search-form{
+  border: 1px solid #aaa;
+  border-bottom-color: #fff;
+  border-radius: 15px 15px 0 0;
+  padding: 15px 25px 10px;
+  background-image: linear-gradient(#ccc, #eee);
+}
+.group2 .search-form fieldset{
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.flex-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+[name="keyword"]{
+  width: 190px;
+  height: 24px;
+  border: 1px solid #aaa;
+  padding: 1px 1px 1px 1px;
+  border-radius: 3px;
+}
+.group2 .search-form fieldset button[type="submit"]{
+  height: 24px;
+  border: 1px solid #aaa;
+  background-color: #181818;
+  color: #fff;
+  padding : 0 10px;
+  border-radius: 3px;
+}
+
+
 .group3 {
   width: 190px;
 }
