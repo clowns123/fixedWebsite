@@ -644,3 +644,19 @@
 4. 오늘 숙제
    1. ul부분을 노멀플로우로 유지하면서 바꾸기
 
+
+
+<hr/>
+
+# 3일차
+
+
+
+
+
+1. 글자 조절은 text-align(black요소), vertical-align(inline)를 정렬한다.
+2. [정보화진흥원 웹 접근성에 대해](https://github.com/niawa)
+3. [웹접근성 연구소](https://www.wah.or.kr:444/index.asp)
+4. figure를 a태그로 묶을 수 있다.
+5. 글자를 읽을 떄 가장 좋은 행간의 간격은 1.5 ~ 1.6배가 가장 보기 편하다.
+
