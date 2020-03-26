@@ -669,3 +669,44 @@
 9. css 전처리기를 하는 이유는 반복사용이 적기 떄문이다.
    1. 지금 실습 예제를 바꿔보자 좋다.
 
+<hr/>
+
+# 4일차
+
+1. 요소에 문제가 생기면 부모요소를 이용하는 경우도 있다.
+
+   1. ```css
+      
+      .btn-event {
+        background-color: yellow;
+        overflow: hidden;
+        height: 20px;
+      }
+      .btn-event button {
+        width: 20px;
+        height: 20px;
+        overflow: hidden;
+        padding: 20px 0 0 0;
+        border: none;
+        background: pink;
+      }
+      ```
+
+   2. ```css
+      
+      .btn-event {
+        background-color: yellow;
+        overflow: hidden;
+        height: 20px;
+      }
+      .btn-event button {
+        width: 20px;
+        padding: 20px 0 0 0;
+        border: none;
+        background: pink;
+      
+      ```
+
+   3. 위의 버튼을 원하는대로 만들 수 있다.
+
+2. 

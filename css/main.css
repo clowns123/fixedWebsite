@@ -852,7 +852,7 @@ html {
 }
 
 /* 신규 이벤트 관련 사이트 */
-.event {
+/* .event {
   padding: 10px;
   border: 1px solid #ccc;
   border-bottom: none;
@@ -881,60 +881,79 @@ html {
   padding-bottom: 10px;
 }
 .btn-event .btn-event-prev {
-  /* top: 7px;
-  right: 35px; */
   background-image: url(./images/back_forward.png);
   background-position: -1px -2px;
   width: 19px;
   height: 18px;
   overflow: hidden;
-  /* font-size: 0; */
   text-indent: -1000px;
 }
 .btn-event .btn-event-next {
-  /* position: absolute;
-  top: 7px;
-  right: 10px; */
   background-image: url(./images/back_forward.png);
   background-position: 17px -2px;
   width: 19px;
   height: 18px;
   overflow: hidden;
   text-indent: -1000px;
-}
-
-.site{
-  
-}
-.site .site-list{
-  list-style: none;
-  display: block;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  font-size: 1.4rem;
-  border-radius: 3px;
-  width: 100%;
-  height: 25px;
+} */
+/* 
+.btn-event {
+  background-color: yellow;
   overflow: hidden;
+  height: 20px;
+}
+.btn-event button {
+  width: 20px;
+  padding: 20px 0 0 0;
+  border: none;
+  background: pink;
+} */
+.event{
+  background-color: lime;
+  border-bottom: 1px solid #999;
+  position: relative;
+}
+.event-heading{
+  font-size: 1.5rem;
 
 }
-
-.site .site-list a{
-  display: block;
-  margin: 5px 10px;
+.event-thumbnail, .event-brief{
+  margin: 10px 0;
+}
+.event-thumbnail img{
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #aaac;
 }
 
-.site .site-list:hover{
-  animation: test 500ms 1 forwards alternate;
+.event-brief em{
+  font-style: normal;
+}
+.point-color{
+  color: #ed552f;
+  margin: 0;
+}
+.btn-event {
+  background-color: yellow;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.btn-event-prev,
+.btn-event-next {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background-color: pink;
+  background: pink url(./images/back_forward.png) no-repeat;
+  text-indent: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
 }
 
-@keyframes test{
-  0% {
-    height: 25px;
-  }
-  100% {
-    height: 110px;
-  }
+.btn-event-next {
+  background-position: -36px 0;
 }
 /* 슬로건 */
 .slogan {
