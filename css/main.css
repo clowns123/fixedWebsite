@@ -17,17 +17,6 @@ legend {
   clip: rect(0, 0, 0, 0);
   clip-path: polygon(0 0, 0 0, 0 0);
 }
-.slogan {
-  background-color: blueviolet;
-  height: 10vh;
-}
-.footer-bg {
-  background-color: teal;
-}
-.footer {
-  background-color: tomato;
-  height: 10vh;
-}
 /* 기본 Box Sizing */
 body *,
 body *::before,
@@ -762,8 +751,7 @@ body {
   align-items: center;
 }
 .favorite-list li a{
-  /* flex-grow: 1; */
-  
+  flex-grow: 1;
 }
 .favorite-list li::before {
   content: counter(number);
@@ -818,4 +806,141 @@ body {
 }
 /* 슬로건 */
 .slogan {
+  position: relative;
+  padding: 0 70px 0 180px;
+}
+.slogan-heading{
+  width: 110px;
+  height: 83px;
+  text-align: center;
+  line-height: 83px;
+  font-size: 1.4rem;
+  margin: 0;
+  font-weight: normal;
+  position: absolute;
+  bottom: -35px;
+  left: 35px;
+}
+.slogan-heading::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(images/coffee.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+}
+.slogan-content{
+  color: #a09784;
+}
+.slogan-content q::after{
+  content: '';
+}
+
+.slogan-content q::before{
+  font-size: 3rem;
+  position: relative;
+  top: 5px;
+}
+
+/* 푸터 */
+.footer-bg{
+  background: #ccc linear-gradient(#ccc, #fff);
+  padding-top: 15px;
+}
+/* 
+.footer{
+  padding-left: 140px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  position: relative;
+}
+.footer .footer-logo{
+  position: absolute;
+  left: 0;
+  top: 37px;
+}
+
+.footer .guide-list{
+  list-style-type: none;
+  display: flex;
+  border: 1px solid #181818;
+  border-radius: 15px;
+  background: #181818;
+  color: #fff;
+  padding : 10px 10px;
+  width: 650px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer .guide-list li{
+  padding: 0 15px;
+}
+.footer .guide-list li a{
+
+}
+
+.footer .address{
+
+}
+
+.footer .copyright{
+
+}
+
+.footer .badge{
+  position: absolute;
+  right: 0px;
+  top: 10px;
+} */
+
+
+.footer{
+  position: relative;
+  padding: 0 100px 0 180px;
+}
+.footer .footer-logo{
+  position: absolute;
+  top: 12px;
+  left: 70px;
+
+}
+
+.footer .guide-list{
+  background-color: #7b8385;
+  color: #fff;
+  padding-left: 0;
+  padding: 2px 25px;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+.footer .guide-list li{
+}
+.footer .guide-list li a{
+  padding: 5px;
+  display: block;
+  text-transform: capitalize;
+}
+.footer .address{
+  font-style: normal;
+  margin-bottom: 10px;
+}
+.footer .address span{
+  margin: 0 20px;
+}
+.footer .copyright{
+  margin: 0 20px;
+  font-size: 1em;
+}
+
+.footer .badge{
+  position: absolute;
+  top: 0;
+  right: 0;
 }
