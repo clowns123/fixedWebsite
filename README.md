@@ -730,4 +730,5 @@
 
 1. 푸터 요소에는 특별히 헤딩요소를 삽입하지 않아도 된다.
 2. small : 저작권 같은 요소에 삽입, 주변 요소보다 작게 표현
-3. 
+3. [grid게임](https://cssgridgarden.com/#ko)
+4. [gird ebook](https://github.com/yamoo9/CSS-Grid)
